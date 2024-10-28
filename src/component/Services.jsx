@@ -100,11 +100,11 @@ function Services() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
-        <button className="px-6 py-2 border border-0.5 border-green-500 bg-white font-semibold rounded-3xl flex items-center space-x-2 relative z-10">
+      <div className="flex justify-center mt-10 mb-5">
+        <button className="px-10 py-4 border-[0.8px] border-[#40AF3E] bg-white font-semibold rounded-[44px] flex items-center space-x-2 relative font-poppins">
           View More
-          <div className="bg-[#00B512] rounded-full p-2 absolute right-[-1.5rem] top-1/2 transform -translate-y-1/2">
-            <img src={arrowright} alt="arrow icon" className="w-6 h-6" />
+          <div className="bg-[#00B512] rounded-full p-3 absolute right-[-2rem] top-1/2 transform -translate-y-1/2">
+            <img src={arrowright} alt="arrow icon" />
           </div>
         </button>
       </div>

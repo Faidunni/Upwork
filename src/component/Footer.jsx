@@ -1,34 +1,81 @@
-import bg from "../assets/Images/bg.png";
-import arrowright from "../assets/Images/arrow-right-grey.svg";
-import QrGroup from "../assets/Images/QrGroup.png";
+import Logo from "../assets/Images/Logo.svg";
+import Google from "../assets/Images/Google-play.svg";
+import Appstore from "../assets/Images/App-store.png";
+import facebook from "../assets/icons/facebook.svg";
+import instagram from "../assets/icons/instagram.svg";
+import linkedin from "../assets/icons/linkedin.svg";
+import twitter from "../assets/icons/twitter.svg";
+
+const icons = [
+  {
+    img: <img src={facebook} alt="facebook-icon" />,
+  },
+  {
+    img: <img src={instagram} alt="instagram-icon" />,
+  },
+  {
+    img: <img src={linkedin} alt="linkedin-icon" />,
+  },
+  {
+    img: <img src={twitter} alt="twitter-icon" />,
+  },
+];
 
 function Footer() {
   return (
-    <section className="bg-cover bg-center bg-no-repeat py-20 lg:py-40 px-4 text-white">
-      <div
-        style={{ backgroundImage: `url(${bg})` }}
-        className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:px-20 gap-10 rounded-3xl px-4 pt-5 lg:pt-0"
-      >
-        <div>
-          <h1 className="font-poppins text-[48px] font-600 text-white uppercase">
-            Are you ready to start?
-          </h1>
-          <p className="font-poppins font-400 text-white">
-            Personalize your settings, follow your progress, archive your
-            highlights and notes automatically Glose is the ultimate reading{" "}
-          </p>
-          <div className="mt-10">
-            <button className="bg-[#00B512] text-neutral-50 px-8 py-3 rounded-[44px] font-poppins font-600 ">
-              Get Started
-            </button>
-            <button className="bg-white rounded-full p-2 absolute lg:left-[53%] left-[25%]">
-              <img src={arrowright} alt="arrow-right" />
-            </button>
-          </div>
-        </div>
-        <img src={QrGroup} alt="" />
+    <footer className="flex  flex-col  items-center">
+      <img src={Logo} alt="upgrade-logo" />
+
+      <div className="flex gap-4 my-4">
+        <img src={Appstore} alt="App-store" />
+        <img src={Google} alt="google-play-store" />
       </div>
-    </section>
+
+      {/* Navigation Links */}
+      <div className="flex flex-wrap font-poppins space-x-8 my-4 text-[#646161] justify-center ">
+        <p>Personal Loan</p>
+        <p>One Card</p>
+        <p>Savings</p>
+        <p>Checking</p>
+        <p>Help</p>
+        <p>Support</p>
+      </div>
+
+      {/* social icons */}
+      <div className="flex gap-2 my-4">
+        {icons.map((icon, index) => (
+          <div
+            key={index}
+            className="flex items-center bg-[#006022] border border-neutral-50 rounded-full p-2"
+          >
+            {icon.img}
+          </div>
+        ))}
+      </div>
+
+      <p className="font-poppins font-400 text-[14px]">
+        <span className="font-600 font-poppins ">Send Your Feedback :</span>{" "}
+        moc.edargpu@tcatnoc
+      </p>
+
+      {/* Policies and Conditions */}
+      <div className="flex flex-wrap font-poppins space-x-2 my-4 text-[#646161] justify-center font-400 text-[14px]">
+        <p>Privacy Policy</p>
+        <span>|</span>
+        <p>Terms & Condition</p>
+        <span>|</span>
+        <p>Cookie Notice</p>
+        <span>|</span>
+        <p>Copyright Policy</p>
+        <span>|</span>
+        <p>Data Policy</p>
+      </div>
+
+      {/* Copyright */}
+      <p className="text-[14px] font-poppins text-[#646161] mt-2 mb-8">
+        &copy; 2024 Design Monks. All rights reserved.
+      </p>
+    </footer>
   );
 }
 
