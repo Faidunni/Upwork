@@ -34,12 +34,13 @@ function TrustWorthness() {
             Our mission is to make finance more accessible, transparent, and
             secure for everyone. With cutting.
           </p>
-          <div className="mt-10">
-            <button className="bg-[#00B512] text-neutral-50 px-8 py-3 rounded-[44px] font-poppins font-600 ">
+          {/* Get Started Button */}
+          <div className=" mt-10">
+            <button className="px-8 py-3  bg-[#00B512] font-poppins font-600 rounded-3xl flex items-center space-x-2 relative text-neutral-50">
               Get Started
-            </button>
-            <button className="bg-white rounded-full p-2 absolute lg:left-[53%] left-[25%]">
-              <img src={arrowright} alt="arrow-right" />
+              <div className="bg-white rounded-full p-2 absolute right-[-1.5rem] top-1/2 transform -translate-y-1/2">
+                <img src={arrowright} alt="arrow icon" />
+              </div>
             </button>
           </div>
         </div>
