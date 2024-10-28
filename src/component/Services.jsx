@@ -100,7 +100,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center mt-10">
         <button className="px-6 py-2 border border-0.5 border-green-500 bg-white font-semibold rounded-3xl flex items-center space-x-2 relative z-10">
           View More
           <div className="bg-[#00B512] rounded-full p-2 absolute right-[-1.5rem] top-1/2 transform -translate-y-1/2">

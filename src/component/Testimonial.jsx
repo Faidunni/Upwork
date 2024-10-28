@@ -1,9 +1,10 @@
 import fire from "../assets/Images/fire.svg";
-import quote from "../assets/Images/quote.svg";
+import quote from "../assets/Images/quote.png";
 import star from "../assets/Images/star.svg";
 import Thamos from "../assets/Images/Thamos.svg";
 import Richards from "../assets/Images/Richards.svg";
 import Mike from "../assets/Images/Mike.svg";
+import arrowright from "../assets/Images/arrow-right.svg";
 
 const people = [
   {
@@ -20,6 +21,8 @@ const people = [
     img: (
       <img src={Richards} alt="Richards" className="rounded-full w-12 h-12" />
     ),
+    background: "bg-[#004852]",
+    color: "text-[#ffffff]",
     star: <img src={star} alt="star" className="w-16" />,
     name: "Richards Hawkins",
     role: "Marketing Manager of Upnow",
@@ -51,24 +54,34 @@ function Testimonial() {
       </div>
 
       {/* Testimonials Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl">
         {people.map((person, index) => (
           <div
             key={index}
-            className="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col items-center"
+            className={`bg-white p-8 rounded-lg font-poppins text-center flex flex-col ${
+              person.background || ""
+            }`}
           >
             <div className="text-green-600 mb-4">{person.quote}</div>
-            <p className="font-poppins font-normal text-gray-700 mb-4">
+            <p
+              className={`font-poppins font-400 text-[#161919]  mb-4 ${
+                person.color || ""
+              }`}
+            >
               {person.text}
             </p>
-            <div className="flex items-center gap-2 mb-2">{person.star}</div>
             <div className="flex items-center gap-3 mt-4">
               {person.img}
-              <div className="text-left">
-                <h3 className="font-semibold text-lg text-black">
+              <div className="text-left flex flex-col">
+                {person.star}
+
+                <h3
+                  className={`font-500 mt-1 text-[#161919] ${person.color || ""}
+                  }`}
+                >
                   {person.name}
                 </h3>
-                <p className="text-gray-500 text-sm">{person.role}</p>
+                <p className="text-[#A1A1A1] text-sm font-400">{person.role}</p>
               </div>
             </div>
           </div>
@@ -76,10 +89,14 @@ function Testimonial() {
       </div>
 
       {/* View More Button */}
-      <button className="mt-10 bg-green-500 text-white py-3 px-6 rounded-full flex items-center gap-2 hover:bg-green-600 transition">
-        View More
-        <span className="text-white text-lg">→</span>
-      </button>
+      <div className="flex justify-center mt-10">
+        <button className="px-6 py-2 border border-0.5 border-green-500 bg-white font-semibold rounded-3xl flex items-center space-x-2 relative z-10">
+          View More
+          <div className="bg-[#00B512] rounded-full p-2 absolute right-[-1.5rem] top-1/2 transform -translate-y-1/2">
+            <img src={arrowright} alt="arrow icon" className="w-6 h-6" />
+          </div>
+        </button>
+      </div>
     </section>
   );
 }
