@@ -10,7 +10,7 @@ function QRcode() {
         className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:px-20 gap-10 rounded-3xl px-4 pt-5 "
       >
         <div>
-          <h1 className="font-poppins text-[48px] font-600 text-white uppercase">
+          <h1 className="font-poppins lg:text-[48px] text-[28px] font-600 text-white uppercase">
             Are you ready to start?
           </h1>
           <p className="font-poppins font-400 text-white">

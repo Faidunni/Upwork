@@ -20,7 +20,7 @@ function Services() {
           </p>
         </button>
       </div>
-      <p className="font-poppins lg:text-[48px] font-600 text-center uppercase lg:leading-[50px] mt-4 text-[20px]">
+      <p className="font-poppins lg:text-[48px] font-600 text-center uppercase lg:leading-[50px] mt-4 text-[28px]">
         Can Help You Achieve <br />
         Financial Success
       </p>
