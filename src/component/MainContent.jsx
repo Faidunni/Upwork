@@ -1,8 +1,6 @@
 import fire from "../assets/Images/fire.svg";
 import barChart from "../assets/Images/barChart.png";
 import greenline from "../assets/Images/Green-line.png";
-import phone1 from "../assets/Images/phone1.png";
-import phone2 from "../assets/Images/phone2.png";
 import arrowright from "../assets/Images/arrow-right.svg";
 import About from "../assets/Images/About.svg";
 
