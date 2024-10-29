@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import logo from "../assets/Images/Logo.svg";
 import fire from "../assets/Images/fire.svg";
 import HeroGroup from "../assets/Images/HeroGroup.svg";
@@ -19,6 +20,12 @@ const Navlinks = [
 ];
 
 function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <section
       className="bg-cover bg-center bg-no-repeat"
@@ -43,10 +50,28 @@ function Hero() {
         </button>
 
         {/* Hamburger Menu for Mobile */}
-        <button className="md:hidden flex items-center">
-          <span className="text-primary">☰</span>
+        <button
+          className="md:hidden flex items-center"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span className="text-primary text-2xl">☰</span>
         </button>
       </header>
+
+      {/* Mobile Navigation Links */}
+      {menuOpen && (
+        <ul className="md:hidden flex flex-col items-center  w-full py-4 gap-2 bg-neutral-50 h-screen">
+          {Navlinks.map((link, index) => (
+            <li key={index} className="font-poppins font-400 mb-5">
+              {link.list}
+            </li>
+          ))}
+          <button className="font-poppins border border-primary rounded-xl font-600  px-4 py-2 capitalize">
+            Sign In
+          </button>
+        </ul>
+      )}
 
       {/* Hero section */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:px-[100px] gap-10 rounded-3xl px-4 pt-5">
