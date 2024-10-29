@@ -74,9 +74,9 @@ function Hero() {
       )}
 
       {/* Hero section */}
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:px-[100px] gap-10 rounded-3xl px-4 pt-5">
+      <div className=" flex flex-col lg:flex-row items-center justify-between lg:px-[100px] gap-10 rounded-3xl px-4 pt-5">
         <div>
-          <button className="font-poppins font-500 text-white flex items-center gap-1 bg-[#24afb655] border border-neutral-200 py-2 px-4 rounded-full mb-6">
+          <button className="font-poppins font-500 text-white flex items-center gap-1 bg-[#00e2ee55] border border-neutral-200 py-2 px-4 rounded-full mb-6">
             <img src={fire} alt="fire-icon" />
             <p className="uppercase text-[14px] font-500">
               100% trusted platform
