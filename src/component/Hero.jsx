@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/Images/Logo.svg";
 import fire from "../assets/Images/fire.svg";
 import HeroGroup from "../assets/Images/HeroGroup.svg";
@@ -76,7 +76,7 @@ function Hero() {
       {/* Hero section */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:px-[100px] gap-10 rounded-3xl px-4 pt-5">
         <div>
-          <button className="font-poppins font-500 text-white flex items-center gap-1 bg-neutral-200 border border-neutral-200 py-2 px-4 rounded-full mb-6">
+          <button className="font-poppins font-500 text-white flex items-center gap-1 bg-[#24afb655] border border-neutral-200 py-2 px-4 rounded-full mb-6">
             <img src={fire} alt="fire-icon" />
             <p className="uppercase text-[14px] font-500">
               100% trusted platform
