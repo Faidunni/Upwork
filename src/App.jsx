@@ -9,7 +9,7 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <>
-      <div>
+      <div className="overflow-hidden">
         <Hero />
         <MainContent />
         <TrustWorthness />

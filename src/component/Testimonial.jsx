@@ -21,7 +21,7 @@ const people = [
     img: (
       <img src={Richards} alt="Richards" className="rounded-full w-12 h-12" />
     ),
-    background: "bg-[#004852]",
+    background: "#004852", // Updated to use hex color directly
     color: "text-[#ffffff]",
     star: <img src={star} alt="star" className="w-16" />,
     name: "Richards Hawkins",
@@ -58,13 +58,14 @@ function Testimonial() {
         {people.map((person, index) => (
           <div
             key={index}
-            className={`bg-white p-8 rounded-lg font-poppins text-center flex flex-col ${
-              person.background || ""
-            }`}
+            style={{ backgroundColor: person.background || "#FFFFFF" }}
+            className="p-8 rounded-lg font-poppins text-center flex flex-col"
           >
-            <div className="text-green-600 mb-4">{person.quote}</div>
+            <div className={`text-green-600 mb-4 ${person.color || ""}`}>
+              {person.quote}
+            </div>
             <p
-              className={`font-poppins font-400 text-[#161919]  mb-4 ${
+              className={`font-poppins font-400 text-[#161919] mb-4 ${
                 person.color || ""
               }`}
             >
@@ -74,9 +75,9 @@ function Testimonial() {
               {person.img}
               <div className="text-left flex flex-col">
                 {person.star}
-
                 <h3
-                  className={`font-500 mt-1 text-[#161919] ${person.color || ""}
+                  className={`font-500 mt-1 text-[#161919] ${
+                    person.color || ""
                   }`}
                 >
                   {person.name}

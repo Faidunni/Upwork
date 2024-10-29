@@ -4,6 +4,7 @@ import greenline from "../assets/Images/Green-line.png";
 import phone1 from "../assets/Images/phone1.png";
 import phone2 from "../assets/Images/phone2.png";
 import arrowright from "../assets/Images/arrow-right.svg";
+import About from "../assets/Images/About.svg";
 
 function MainContent() {
   return (
@@ -19,7 +20,7 @@ function MainContent() {
           <img src={barChart} alt="bar-chart" />
         </div>
         <div>
-          <h1 className="font-poppins font-bold text-[48px] pr-20 leading-[120%] mb-2">
+          <h1 className="font-poppins font-bold lg:text-[48px] text-[28px] pr-20 leading-[120%] mb-2">
             ALL YOUR MONEY NEEDS IN ONE APP
           </h1>
           <div className="flex ">
@@ -63,51 +64,37 @@ function MainContent() {
       </div>
 
       {/* featured section */}
-      <div className="mt-[120px] flex gap-10 lg:flex-row flex-col">
+      <div className="mt-[120px] flex  lg:flex-row flex-col">
         <div className=" mt-5">
           <button className="font-poppins font-500 text-Primary-700 flex items-center gap-1 bg-neutral-50 border border-neutral-200 py-2 px-4 rounded-full mb-6">
             <img src={fire} alt="fire-icon" />
             <p className="uppercase text-[14px] font-500">featured</p>
           </button>
-          <h1 className="font-poppins font-bold lg:text-[48px] pr-20 leading-[120%] mb-2 text-Secondary-Dark">
+          <h1 className="font-poppins font-bold lg:text-[43px]  leading-[120%] mb-2 text-Secondary-Dark">
             ALL THE FEATURES IN ONE APP
           </h1>
           <ul className="space-y-4">
-            <li className="text-list-text font-poppins font-400 capitalize lg:block hidden">
+            <li className="text-list-text font-poppins font-400 capitalize ">
               <span className="mr-2">&#8226;</span> Get 3% cash back on everyday
-              purchases, 2% on <br /> everything else4
+              purchases, 2% on everything else4
             </li>
-            <li className="text-list-text font-poppins font-400 capitalize lg:hidden block">
-              <span className="mr-2">&#8226;</span> Get 3% cash back on everyday
-              purchases, 2% on <br /> everything else4
-            </li>
+
             <li className="text-list-text font-poppins font-400 capitalize">
               <span className="mr-2">&#8226;</span> Extra Spending Power when
               you have Rewards Checking through Upgrade6
             </li>
           </ul>
-          <div className="mt-10 relative">
-            <button className="font-poppins font-600 border-[0.8px] border-[#40AF3E] rounded-[44px] py-3 px-10">
+          <div className=" mt-10">
+            <button className="px-8 py-3 border-[#40AF3E] font-poppins font-600 rounded-3xl flex items-center space-x-2 relative border-[0.8px]">
               Get Started
-            </button>
-            <button className="bg-[#00B512] rounded-full p-2 absolute lg:left-[35%] left-[45%]">
-              <img src={arrowright} alt="arrow-right" />
+              <div className="bg-[#00B512] rounded-full p-2 absolute right-[-1.5rem] top-1/2 transform -translate-y-1/2">
+                <img src={arrowright} alt="arrow icon" />
+              </div>
             </button>
           </div>
         </div>
         <div className="w-full  flex items-center justify-center md:justify-end mt-3 md:mt-0">
-          <div className="bg-[#F6F9F8] pl-10 pr-5 pt-8 rounded-xl flex gap-20">
-            <div className="mt-10">
-              <img
-                src={phone1}
-                alt="services"
-                className="h-32 md:h-48 lg:h-full"
-              />
-            </div>
-            <div className="mb-10">
-              <img src={phone2} alt="24" className="h-32 md:h-48 lg:h-full " />
-            </div>
-          </div>
+          <img src={About} alt="" />
         </div>
       </div>
     </section>
