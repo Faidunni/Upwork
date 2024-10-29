@@ -91,7 +91,7 @@ function Hero() {
             banking and earn cash back on your everyday purchases
           </p>
           <div className="mt-10">
-            <button className="px-6 md:px-8 py-3 bg-[#00B512] font-poppins font-600 rounded-3xl flex items-center space-x-2 relative text-neutral-50">
+            <button className="px-8 py-3 bg-[#00B512] font-poppins font-600 rounded-3xl flex items-center space-x-2 relative text-neutral-50">
               Open Account
               <div className="bg-white rounded-full p-2 absolute right-[-1rem] md:right-[-1.5rem] top-1/2 transform -translate-y-1/2">
                 <img src={arrowright} alt="arrow icon" />
