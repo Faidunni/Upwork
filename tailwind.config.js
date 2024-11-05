@@ -17,6 +17,7 @@ export default {
         "vertical-color": "#D9D9D9",
         "green-vertical-color": "#04684C",
         "list-text": "#676666",
+        'black-opacity-06': 'rgba(0, 0, 0, 0.06)'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

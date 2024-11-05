@@ -71,17 +71,15 @@ function MainContent() {
           <h1 className="font-poppins font-bold lg:text-[43px]  leading-[120%] mb-2 text-Secondary-Dark">
             ALL THE FEATURES IN ONE APP
           </h1>
-          <ul className="space-y-4">
+          <ol className="space-y-4 list-disc">
             <li className="text-list-text font-poppins font-400 capitalize ">
-              <span className="mr-2">&#8226;</span> Get 3% cash back on everyday
-              purchases, 2% on everything else4
+              Get 3% cash back on everyday purchases, 2% on everything else4
             </li>
-
             <li className="text-list-text font-poppins font-400 capitalize">
-              <span className="mr-2">&#8226;</span> Extra Spending Power when
-              you have Rewards Checking through Upgrade6
+              Extra Spending Power when you have Rewards Checking through
+              Upgrade6
             </li>
-          </ul>
+          </ol>
           <div className=" mt-10">
             <button className="px-8 py-3 border-[#40AF3E] font-poppins font-600 rounded-3xl flex items-center space-x-2 relative border-[0.8px]">
               Get Started
